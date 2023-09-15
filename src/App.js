@@ -4,13 +4,14 @@ import StyledButton from './components/StyledButton ';
 function App() {
   return (
     <Grid>
-      <StyledButton variant="default">Default</StyledButton>
-      <StyledButton variant="success">Success</StyledButton>
-      <StyledButton variant="error">Error</StyledButton>
-      <StyledButton variant="warning">Warning</StyledButton>
-      <StyledButton variant="info">Info</StyledButton>
+      <StyledButton variant="default" onClick={() => alert('Botón Default presionado')}>Default</StyledButton>
+      <StyledButton variant="success" onClick={() => alert('Botón Success presionado')}>Success</StyledButton>
+      <StyledButton variant="error" onClick={() => alert('Botón Error presionado')}>Error</StyledButton>
+      <StyledButton variant="warning" onClick={() => alert('Botón Warning presionado')}>Warning</StyledButton>
+      <StyledButton variant="info" onClick={() => alert('Botón Info presionado')}>Info</StyledButton>
     </Grid>
   );
 }
+
 
 export default App;
